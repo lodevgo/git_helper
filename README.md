@@ -3,6 +3,22 @@
 1. Стрелочками переключаем предыдущие команды
 2. Через TAB дописываем название файлов и команды
 ## Команды 
+Команда показывает историю коммитов и дерево с ветками
+```sh
+git log --oneline --graph --all
+```
+Создать новую ветку и сразу перейти
+```sh
+git checkout -b name_branch
+```
+Удалить ветку на Github
+```sh
+git push origin --delete feature-branch
+```
+Удалить ветку, даже если она не была смержена.
+```sh
+git branch -D feature-branch
+```
 Первичная настройка гита для командной работы
 ```sh
 git config --global user.name "write_name"
